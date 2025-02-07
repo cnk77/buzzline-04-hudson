@@ -148,7 +148,7 @@ def update_chart():
 # Function to process a single message
 # ####################################
 
-def process_message(message):
+def process_message(message, category_lengths):
     try:
         message_dict = json.loads(message)
         category = message_dict.get("category", "other")
@@ -182,11 +182,11 @@ def main():
         value_deserializer=lambda x: json.loads(x.decode("utf-8"))
     )
 
-    messages = []
+    category_lengths = defaultdict(list)
 
     try:
         for message in consumer:
-            process_message(message.value)
+            process_message(message.value, category_lengths)
             
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
