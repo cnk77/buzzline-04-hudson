@@ -150,9 +150,9 @@ def update_chart():
 
 def process_message(message, category_lengths):
     try:
-        message_dict = json.loads(message)
-        category = message_dict.get("category", "other")
-        message_length = message_dict.get("message_length", 0)
+        # Use the message dictionary directly
+        category = message.get("category", "other")
+        message_length = message.get("message_length", 0)
         
         category_lengths[category].append(message_length)
         

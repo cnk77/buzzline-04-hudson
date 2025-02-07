@@ -1695,3 +1695,40 @@
 2025-02-07 11:51:19.680 | WARNING  | __main__:main:171 - Producer interrupted by user.
 2025-02-07 11:51:19.682 | INFO     | __main__:main:177 - Kafka producer closed.
 2025-02-07 11:51:19.683 | INFO     | __main__:main:178 - Producer shutting down.
+2025-02-07 11:55:14.877 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-07 11:55:14.880 | INFO     | __main__:main:138 - START producer...
+2025-02-07 11:55:15.004 | INFO     | __main__:main:151 - Kafka producer connected to localhost:9092
+2025-02-07 11:55:15.006 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:15', 'category': 'travel', 'sentiment': 0.78, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-07 11:55:15.012 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:15', 'category': 'travel', 'sentiment': 0.78, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-07 11:55:20.017 | INFO     | __main__:main:158 - {'message': 'I just found a story! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-07 11:55:20', 'category': 'other', 'sentiment': 0.26, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-07 11:55:20.018 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a story! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-07 11:55:20', 'category': 'other', 'sentiment': 0.26, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-07 11:55:23.538 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-07 11:55:23.968 | INFO     | __main__:main:175 - START consumer...
+2025-02-07 11:55:25.020 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:25', 'category': 'travel', 'sentiment': 0.41, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-07 11:55:25.024 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:25', 'category': 'travel', 'sentiment': 0.41, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-07 11:55:25.037 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:30.028 | INFO     | __main__:main:158 - {'message': 'I just saw a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:30', 'category': 'entertainment', 'sentiment': 0.57, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-02-07 11:55:30.029 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:30', 'category': 'entertainment', 'sentiment': 0.57, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-02-07 11:55:30.035 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:35.031 | INFO     | __main__:main:158 - {'message': 'I just loved recipe! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-07 11:55:35', 'category': 'food', 'sentiment': 0.95, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-02-07 11:55:35.049 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved recipe! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-07 11:55:35', 'category': 'food', 'sentiment': 0.95, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-02-07 11:55:35.057 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:40.051 | INFO     | __main__:main:158 - {'message': 'I just loved a meme! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:40', 'category': 'humor', 'sentiment': 0.32, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-02-07 11:55:40.067 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a meme! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-02-07 11:55:40', 'category': 'humor', 'sentiment': 0.32, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-02-07 11:55:40.075 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:45.070 | INFO     | __main__:main:158 - {'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:45', 'category': 'travel', 'sentiment': 0.83, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-07 11:55:45.072 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:45', 'category': 'travel', 'sentiment': 0.83, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-07 11:55:45.079 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:50.077 | INFO     | __main__:main:158 - {'message': 'I just loved JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:50', 'category': 'tech', 'sentiment': 0.08, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-02-07 11:55:50.079 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:50', 'category': 'tech', 'sentiment': 0.08, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-02-07 11:55:50.084 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:55.081 | INFO     | __main__:main:158 - {'message': 'I just saw a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:55', 'category': 'entertainment', 'sentiment': 0.49, 'keyword_mentioned': 'movie', 'message_length': 34}
+2025-02-07 11:55:55.095 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-07 11:55:55', 'category': 'entertainment', 'sentiment': 0.49, 'keyword_mentioned': 'movie', 'message_length': 34}
+2025-02-07 11:55:55.099 | ERROR    | __main__:process_message:166 - Error processing message: the JSON object must be str, bytes or bytearray, not dict
+2025-02-07 11:55:57.658 | WARNING  | __main__:main:192 - Consumer interrupted by user.
+2025-02-07 11:55:57.659 | INFO     | __main__:main:195 - Kafka consumer closed.
+2025-02-07 11:56:00.097 | INFO     | __main__:main:158 - {'message': 'I just shared a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-07 11:56:00', 'category': 'entertainment', 'sentiment': 0.59, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-02-07 11:56:00.105 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-07 11:56:00', 'category': 'entertainment', 'sentiment': 0.59, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-02-07 11:56:03.109 | WARNING  | __main__:main:171 - Producer interrupted by user.
+2025-02-07 11:56:03.110 | INFO     | __main__:main:177 - Kafka producer closed.
+2025-02-07 11:56:03.110 | INFO     | __main__:main:178 - Producer shutting down.
