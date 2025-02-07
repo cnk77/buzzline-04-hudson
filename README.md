@@ -186,6 +186,40 @@ When resuming work on this project:
 3. Start the Kafka service.
 4. Activate your local project virtual environment (.env).
 
+## Custom project consumer
+The custom producer project_consumer_hudson.py reads from a kafka topic and visualizes the average message length per category of messages produced by the producer project_producer_case.py.
+
+To use the consumer: 
+First, follow the above instructions in "Later Work Sessions"
+
+Then, start the producer to generate the messages. 
+
+Windows:
+
+```shell
+py -m producers.basic_json_producer_case
+```
+
+Mac/Linux:
+python3 -m producers.basic_json_producer_case
+
+Finally, start the custom consumer that will process and visualize the messages. 
+
+In VS Code, open a NEW terminal in your root project folder. 
+Use the commands below to activate .venv, and start the consumer. 
+
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.basic_json_consumer_case
+```
+
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m consumers.basic_json_consumer_case
+
+
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
 You can always recreate it, activate it, and reinstall the necessary packages later. 
