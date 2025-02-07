@@ -104,10 +104,10 @@ fig, ax = plt.subplots()
 # to turn on interactive mode for live updates
 plt.ion()
 
-#####################################
+############################################################
 # Define an update chart function for live plotting
 # This will get called every time a new message is processed
-#####################################
+############################################################
 
 
 def update_chart():
@@ -144,6 +144,27 @@ def update_chart():
     # Pause briefly to allow some time for the chart to render
     plt.pause(0.01)
 
+######################################
+# Function to process a single message
+# ####################################
+
+def process_message(message):
+    try:
+        message_dict = json.loads(message)
+        category = message_dict.get("category", "other")
+        message_length = message_dict.get("message_length", 0)
+        
+        category_lengths[category].append(message_length)
+        
+        avg_message_lengths.update(calculate_avg_message_length(category_lengths))
+        logger.info(f"Average message length per category: {avg_message_lengths}")
+        update_chart()
+        
+    except json.JSONDecodeError:
+        logger.error(f"Invalid JSON message: {message}")
+    except Exception as e:
+        logger.error(f"Error processing message: {e}")
+
 
 ######################################
 # Define main function for this module
@@ -165,10 +186,7 @@ def main():
 
     try:
         for message in consumer:
-            messages.append(message.value)
-            avg_message_lengths.update(calculate_avg_message_length(messages))
-            logger.info(f"Average message length per category: {avg_message_lengths}")
-            update_chart()
+            process_message(message.value)
             
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
