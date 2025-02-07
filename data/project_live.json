@@ -1,0 +1,11 @@
+{"message": "I just found recipe! It was amazing.", "author": "Alice", "timestamp": "2025-02-06 14:22:08", "category": "food", "sentiment": 0.25, "keyword_mentioned": "recipe", "message_length": 36}
+{"message": "I just shared a meme! It was amazing.", "author": "Alice", "timestamp": "2025-02-06 14:22:13", "category": "humor", "sentiment": 0.49, "keyword_mentioned": "meme", "message_length": 37}
+{"message": "I just loved a story! It was amazing.", "author": "Charlie", "timestamp": "2025-02-06 14:22:18", "category": "other", "sentiment": 0.67, "keyword_mentioned": "other", "message_length": 37}
+{"message": "I just saw game! It was funny.", "author": "Alice", "timestamp": "2025-02-06 14:22:23", "category": "gaming", "sentiment": 0.57, "keyword_mentioned": "game", "message_length": 30}
+{"message": "I just found travel! It was funny.", "author": "Eve", "timestamp": "2025-02-06 14:22:28", "category": "travel", "sentiment": 0.85, "keyword_mentioned": "travel", "message_length": 34}
+{"message": "I just loved game! It was weird.", "author": "Bob", "timestamp": "2025-02-06 14:22:33", "category": "gaming", "sentiment": 0.31, "keyword_mentioned": "game", "message_length": 32}
+{"message": "I just found a trick! It was boring.", "author": "Charlie", "timestamp": "2025-02-06 14:22:38", "category": "other", "sentiment": 0.41, "keyword_mentioned": "other", "message_length": 36}
+{"message": "I just saw game! It was exciting.", "author": "Charlie", "timestamp": "2025-02-06 14:22:43", "category": "gaming", "sentiment": 0.62, "keyword_mentioned": "game", "message_length": 33}
+{"message": "I just saw game! It was exciting.", "author": "Eve", "timestamp": "2025-02-06 14:22:48", "category": "gaming", "sentiment": 0.42, "keyword_mentioned": "game", "message_length": 33}
+{"message": "I just tried game! It was weird.", "author": "Charlie", "timestamp": "2025-02-06 14:22:53", "category": "gaming", "sentiment": 0.39, "keyword_mentioned": "game", "message_length": 32}
+{"message": "I just saw a meme! It was amazing.", "author": "Alice", "timestamp": "2025-02-06 14:22:58", "category": "humor", "sentiment": 0.7, "keyword_mentioned": "meme", "message_length": 34}
